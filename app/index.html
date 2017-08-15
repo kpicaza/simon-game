@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+<div class="jumbotron bg-primary text-white centered">
+    <h1>Simon Say's</h1>
+</div>
+
+<div id="test"></div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div id="board" class="rounded-circle">
+                <div id="side" class="rounded-circle">
+                    <div class="rounded-border rounded-circle">
+                        <div id="controls" class="rounded-circle">
+                            <div id="game-controls" class="row justify-content-center">
+                                <div id="count" class="col-4 centered">
+                                    <div id="count-box" class="text-danger lead rounded">
+                                    </div>
+                                    <p>Count</p>
+                                </div>
+                                <div id="start" class="col-4 centered">
+                                    <div id="start-box" class="bg-danger rounded-circle circle-box"></div>
+                                    Start
+                                </div>
+                                <div id="strict" class="col-4">
+                                    <button id="strict-box" class="bg-warning rounded-circle circle-box"></button>
+                                    <div id="strict-text">
+                                        Strict <i class="fa fa-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div id="power">
+                                    <button id="power-button" class="power-button">Power On</button>
+                                    <button id="power-off-button" class="power-button">Power Off</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="green-side" class="side bg-success" data-value="0"></div>
+                    <div id="red-side" class="side bg-danger" data-value="1"></div>
+                    <div id="yellow-side" class="side bg-warning" data-value="2"></div>
+                    <div id="blue-side" class="side bg-primary" data-value="3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="model/ToneMaker.js"></script>
+<script type="text/javascript" src="model/Controls.js"></script>
+<script type="text/javascript" src="model/Game.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
+</body>
+</html>
